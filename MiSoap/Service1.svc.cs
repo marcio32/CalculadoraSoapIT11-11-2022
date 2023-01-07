@@ -34,6 +34,12 @@ namespace MiSoap
             return string.Format("El resultado es: {0}", resultado);
         }
 
+        public string GetServicios()
+        {
+            return "Inspecciones";
+        }
+
+        //Enviamos un objeto de ejemplo en el parametro y retornamos un valor
         public CompositeType GetDataUsingDataContract(CompositeType composite)
         {
             if (composite == null)

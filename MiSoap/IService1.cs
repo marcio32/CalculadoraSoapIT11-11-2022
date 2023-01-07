@@ -12,9 +12,12 @@ namespace MiSoap
     [ServiceContract]
     public interface IService1
     {
-
+        //El annotation es obligatorio si se quiere usar la funcion en el servicio SOAP
         [OperationContract]
         string GetSuma(int num1, int num2, int queEs);
+
+        [OperationContract]
+        string GetServicios();
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
